@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+ 
+    
+    <Button
+        android:id="@+id/addedTime"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+       
+         android:clickable="false"
+         android:background="@android:color/white"
+        android:text="@string/addedtime"
+        android:textSize="30sp"
+        android:textColor="@android:color/black"/>
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@android:color/black"
+        android:alpha="0.1"/>
+    
+    
+    <Button
+        android:id="@+id/addedRepeat"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        
+        android:layout_below="@id/addedTime"
+         android:clickable="false"
+          android:textSize="30sp"
+         android:background="@android:color/white"
+        android:text="@string/addedRepeating"
+        android:textColor="@android:color/black"/>
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@android:color/black"
+        android:alpha="0.1"/>
+    
+    <Button
+        android:id="@+id/addedContact1"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:textSize="30sp"
+        android:layout_below="@id/addedRepeat"
+        android:background="@android:color/white"
+        android:clickable="false"
+        android:text="@string/addedContact"
+        android:textColor="@android:color/black"/>
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@android:color/black"
+        android:alpha="0.1"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    <CheckBox 
+        android:id="@+id/isAlarmChoosed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="1"
+        android:scaleY="1"
+       android:layout_alignParentRight="true"
+       android:layout_marginRight="5dp"
+       />
+    </RelativeLayout>
+       
+
+</LinearLayout>

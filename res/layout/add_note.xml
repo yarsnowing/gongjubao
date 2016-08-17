@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#d5d477">
+    
+<TextView 
+    android:id="@+id/time"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="TIME"
+    android:textColor="#45adcf"
+    android:textSize="20sp"/>
+<EditText 
+    android:id="@+id/editnote"  
+    android:layout_width="match_parent"  
+        android:layout_height="350dp"  
+        android:background="@drawable/bg_edittext"  
+        android:padding="5dp"  
+         android:gravity="top"
+  
+    android:layout_margin="36dp"  
+    android:textColorHint="#AAAAAA"  
+    android:textSize="15sp"  
+    
+   
+    android:hint="记录一些吧..."  
+/>  
+
+<Button 
+    android:id="@+id/adddone"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentBottom="true"
+    android:text="确定"
+     android:background="#d5d477"/>
+<Button 
+    android:id="@+id/addcancel"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentBottom="true"
+    android:text="取消"
+    android:textColor="#989898"
+     android:background="#d5d477"/>
+</RelativeLayout>

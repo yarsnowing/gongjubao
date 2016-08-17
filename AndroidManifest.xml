@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yarsnowing.toolssss"
+    android:versionCode="3"
+    android:versionName="1.0.1" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+    
+   
+<uses-permission android:name="android.permission.INTERNET" />  
+<uses-permission android:name="android.permission.READ_PHONE_STATE" />  
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />  
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />  
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />  
+<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />  
+<uses-permission android:name="android.permission.GET_TASKS" />  
+
+  
+    
+    <uses-permission  android:name="android.permission.VIBRATE"/>
+	<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+	<uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" /> 
+	<uses-permission android:name="android.permission.SEND_SMS"/>
+	<uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+	<uses-permission android:name="android.permission.WAKE_LOCK"/>
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />  
+	 <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+ <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    
+    <uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    
+    
+     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    
+    
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/appssss"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        
+      
+        
+       
+   
+  
+       
+     
+        
+        
+        <activity
+            android:name="com.yarsnowing.toolssss.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AlarmActivity"
+            >
+            </activity>
+            <activity 
+            android:name=".AlarmToastActivity">
+            
+        </activity>
+        <activity
+            android:name=".StartLightFragmentActivity">
+            
+        </activity>
+        <activity
+            android:name=".LightFragmentActivity">
+            
+        </activity>
+            <receiver 
+           android:name=".PushAlarm">
+           <intent-filter>
+                <action android:name="Alarm1" />
+
+                
+            </intent-filter>
+       </receiver> 
+       <receiver android:name=".AutoStartReceiver">  
+    <intent-filter>  
+        <action android:name="android.intent.action.BOOT_COMPLETED"/>  
+        <category android:name="android.intent.category.HOME"/>  
+    </intent-filter>  
+</receiver>      
+           
+        <service android:name=".AlarmService">
+            
+        </service>
+        <receiver
+            android:name=".PhoneBroadcastReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL"/>
+                <action android:name="android.intent.action.PHONE_STATE"/>   
+            </intent-filter>
+        </receiver>
+        <service
+            android:name=".LightSosService">
+            
+        </service>
+        <activity android:name=".AlarmFragmenttActivity">
+            
+        </activity>
+        <activity
+            android:name=".AlarmPagerActivity"
+            android:label="@string/app_name">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AlarmFragmenttActivity"/>
+            
+        </activity>
+        <activity 
+            android:name=".NotePagerActivity"
+            android:label="@string/app_name">
+           <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".NoteListFragmentActivity"/>
+        </activity>
+        <activity
+            android:name=".MoreFragmentActivity">
+            
+        </activity>
+        <activity 
+            android:name=".AboutFragmentActivity"></activity>
+    </application>
+
+</manifest>

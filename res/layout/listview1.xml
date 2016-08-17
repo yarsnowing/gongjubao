@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TextView
+       android:id="@+id/timesetted"
+       android:layout_width="wrap_content"
+       android:layout_height="30dp"
+       android:text="timesetted"
+       android:textSize="20sp"
+       />
+    <TextView
+        android:id="@+id/repeatsetted"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/timesetted"
+      
+       
+      
+        android:text="设置超出11个长度时显示省略号"
+        android:textSize="15sp"/>
+    <CheckBox
+        android:id="@+id/isClockOpen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:focusable="false"  
+        />
+       
+
+</RelativeLayout>

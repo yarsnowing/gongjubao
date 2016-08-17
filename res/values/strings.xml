@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   
+   	<string name="app_name">常用工具箱</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="recored">记录一些吧。。。</string>
+    <string name="delete_alarm">删除闹钟</string>
+    <string name="add_alarm">设定闹钟</string>
+    <string name="text1">备忘</string>
+    <string name="setdate">设定时间</string>
+    <string name="addedtime">设定时间</string>
+    <string name="addedRepeating">设定重复方式</string>
+    <string name="addedContact">设定接收者</string>
+    <string name="delete">删除闹钟</string>
+    <string name="setrepeat">设定重复时间</string>
+
+</resources>
